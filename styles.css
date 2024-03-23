@@ -1,0 +1,68 @@
+body {
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  text-align: center;
+  padding: 30% 5%;
+}
+.content {
+  background-color: hsl(0, 0%, 12%);
+  text-align: center;
+  border-radius: 10px;
+  padding: 7% 1%;
+}
+img {
+  border-radius: 50%;
+  width: 25%;
+}
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+h2 {
+  color: hsl(75, 94%, 57%);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 9%;
+}
+p {
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  font-weight: 200;
+}
+ul {
+  list-style-type: none;
+  margin: 8% 5% 0 5%;
+  padding: 0;
+}
+.links li {
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 8px;
+  margin: 15px 0;
+  padding: 12px 0;
+  text-align: center;
+}
+.links li:last-child {
+  margin-bottom: 0;
+}
+.links li:hover {
+  background-color: hsl(75, 94%, 57%);
+  cursor: pointer;
+}
+.links a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-size: 12px;
+}
+.attribution {
+  display: none;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
