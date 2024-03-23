@@ -58,6 +58,9 @@ ul {
   text-decoration: none;
   font-size: 12px;
 }
+li:hover a {
+  color: hsl(0, 0%, 8%);
+}
 .attribution {
   display: none;
   font-size: 11px;
@@ -66,3 +69,16 @@ ul {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* Large devices */
+@media only screen and (min-width: 992px) {
+  body {
+    overflow: hidden;
+    padding: 10% 37%;
+  }
+  .content {
+    padding: 10% 7%;
+  }
+}
+
+
