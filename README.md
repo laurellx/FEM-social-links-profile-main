@@ -24,19 +24,14 @@ Users should be able to:
 
 ### Screenshot
 
-Mobile solution:
 ![Mobile](./assets/images/solution/Mobile.png)
-Desktop solution:
 ![Desktop](./assets/images/solution/Desktop.png)
-Desktop - active states solution:
 ![Desktop - active states](./assets/images/solution/active-states.png)
 
 ### Links
 
 - Solution URL: [GitHub](https://github.com/laurellx/FEM-social-links-profile-main)
 - Live Site URL: [Vercel](https://fem-social-links-profile-main.vercel.app/)
-
-## My process
 
 ### Built with
 
