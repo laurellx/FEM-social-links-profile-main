@@ -1,6 +1,6 @@
 # Frontend Mentor - Social links profile solution
 
-This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -8,15 +8,11 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -28,20 +24,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Mobile](./assets/images/solution/Mobile.png)
+![Desktop](./assets/images/solution/Desktop.png)
+![Desktop - active states](./assets/images/solution/active-states.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/laurellx/FEM-social-links-profile-main)
+- Live Site URL: [Vercel](https://fem-social-links-profile-main.vercel.app/)
 
 ## My process
 
@@ -49,62 +39,65 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+I did not have to face any particular issue to realise this project, as I found it very easy; I could maybe highlight one tricky part that came out from the way I structured the html for the links section.
+I read online that chosing to create a list of link or a link of buttons is not the same thing, because a link would bring us to somewhere else (although mine do not), while a button is supposed to trigger an action, such as showing additional content, submit a response, etc.
+I created an unordered list of links:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<section class="links">
+  <ul>
+    <li>
+      <a href="#" target="_blank"><b>GitHub</b></a>
+    </li>
+    <li>
+      <a href="#" target="_blank"><b>Frontend Mentor</b></a>
+    </li>
+    <li>
+      <a href="#" target="_blank"><b>LinkedIn</b></a>
+    </li>
+    <li>
+      <a href="#" target="_blank"><b>Twitter</b></a>
+    </li>
+    <li>
+      <a href="#" target="_blank"><b>Instagram</b></a>
+    </li>
+  </ul>
+</section>
 ```
+
+When it came to create the hovering effect on the link box color and the font, due to this structure I had to create two different hovers; one for the background color of the link and one for the text color to change when hovering above the whole link "box":
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.links li:hover {
+  background-color: hsl(75, 94%, 57%);
+  cursor: pointer;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+.links a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-size: 12px;
+}
+li:hover a {
+  color: hsl(0, 0%, 8%);
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Without using this syntax (which I found online as mentioned in [Useful resources](#useful-resources)), the font color change would apply only when hovering above the text, not the whole link box.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+In future projects I want to practice more the topic of breakpoints and media queries, as I am not too familiar with them and conscious that there might be better solutions; nonetheless, I wish to comprehend better how they function, in case I need to resort to this feature going on.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Stack Overflow](https://stackoverflow.com/questions/14792574/css-child-set-to-change-color-on-parent-hover-but-changes-also-when-hoveredm) - This solution helped me for the hover effect that e needed to be applied not only to the parent element but also on the child (see [aforementioned code snippets](#what-i-learned)).
+- [W3 Schools](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) - This article helped me chosing the device breakpoints to make the project responsive.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- GitHub - [@laurellx](https://github.com/laurellx)
+- Frontend Mentor - [@laurellx](https://www.frontendmentor.io/profile/laurellx)
