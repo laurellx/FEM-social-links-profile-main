@@ -24,8 +24,11 @@ Users should be able to:
 
 ### Screenshot
 
+Mobile solution:
 ![Mobile](./assets/images/solution/Mobile.png)
+Desktop solution:
 ![Desktop](./assets/images/solution/Desktop.png)
+Desktop - active states solution:
 ![Desktop - active states](./assets/images/solution/active-states.png)
 
 ### Links
